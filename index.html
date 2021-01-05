@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="all">
+    <div id="anketa">
+        <h1>Asmens duomenų surinkimas</h1>
+        <div id="personalInfo">
+            <h3>1. Asmeninė informacija</h2>
+            <div id="Name">
+                
+                <label id ="labelForName" for="yourName">Jūsų vardas:<mark class="red">*</mark></label><br>
+                <p class="redInfo" id="vardasIvestas" hidden="true">Vardas turi būti įvestas</p>
+                <input type="text" id="yourName" name="yourName">
+            </div>  
+            <div id="secondName">
+                <label id ="labelForsecondName" for="YoursecondName">Antrasis vardas:</label><br>
+                <input type="text" id="YoursecondName" name="YoursecondName">
+            </div> 
+            <div id="surname">
+                <label id ="labelForsurname" for="yoursurname">Pavardė:<mark class="red">*</mark></label><br>
+                <p class="redInfo" id="PavardeIvestas" hidden="true">Pavardė turi būti įvesta</p>
+                <input type="text" id="yoursurname" name="yoursurname">
+            </div> 
+            <div id="previousSurname">
+                <label id ="labelForpreviousSurname" for="prevSurname">Ankstesnė pavardė:</label><br>
+                <input type="text" id="prevSurname" name="prevSurname">
+            </div> 
+            <div id="gender">
+                <p>Jūsų lytis:<mark class="red">*</mark></p>
+                <p class="redInfo" id="lytisIvestas" hidden="true">Lytis turi būti pasirinkta</p>
+                <form action="">
+                    <input type="radio" id="woman" name="gender" value="Moteris">
+                    <label for="woman">Moteris</label><br>
+                    <input type="radio" id="man" name="gender" value="Vyras">
+                    <label for="man">Vyras</label><br> 
+                </form> 
+            </div> 
+            <p class="redInfo"  id="gimimoDataIvestas" hidden="true">Gimimo data turi būti įvesta</p>
+            <div id="birthdate">
+                <p>Gimimo data:<mark class="red">*</mark></p>
+                <div class="yearOfBirth">
+                    <label id ="labelForYear" for="year">Metai: </label><br>
+                    <input type="text" id="year" name="year" placeholder="1997">
+                </div>
+                <div class="monthOfBirth">
+                    <label id ="labelForMonth" for="month">Mėnuo: </label><br>
+                    <input type="text" id="month" name="month" placeholder="05">
+                </div>
+                <div class="dayOfBirth">
+                    <label id ="labelForday" for="day">diena: </label><br>
+                    <input type="text" id="day" name="day" placeholder="27">
+                </div>
+            </div>
+
+            <div id="personalCode">
+                <label id ="labelForCode" for="Code">Jūsų asmens kodas:<mark class="red">*</mark> </label><br>
+                <p class="redInfo" id="asmensKodasIvestas" hidden="true">Asmens kodas turi būti įvestas</p>
+                <input type="text" id="Code" name="Code">
+            </div>
+
+        </div>
+
+        <div id="contacts">
+            <h3>2. Kontaktinė inofrmacija</h2>
+            <div id="phoneNumber">
+                <label id ="labelForNumber" for="Number">Telefono numeris:<mark class="red">*</mark></label><br>
+                <p class="redInfo" id="telefonasIvestas" hidden="true">Telefono nr. turi būti įvestas</p>
+                <input type="text" id="Number" name="Number" placeholder="+37060020110">
+            </div>
+            <div id="email">
+                <label id ="labelForemail" for="Youremail">Jūsų el. pašto adresas:<mark class="red">*</mark></label><br>
+                <p class="redInfo" id="elPastasIvestas" hidden="true">El. pašto adresas turi būti įvestas</p>
+                <input type="text" id="Youremail" name="Youremail">
+            </div>
+            <p class="redInfo" id="gyvVietaIvestas" hidden="true">Gyvenamosios vietos turi būti įvestas</p>
+            <p class="redInfo" id="miestasIvestas" hidden="true">Miestas turi būti įvestas</p>
+            <p class="redInfo" id="gatveIvestas" hidden="true">Gatvė turi būti įvestas</p>
+            <p class="redInfo" id="namoNrIvestas" hidden="true">Namo numeris turi būti įvestas</p>
+            <div id="adress">
+                <p>Gyvenamosios vietos adresas:<mark class="red">*</mark></p>
+                <div id="CountryCity">
+                    <label id ="labelForCity" for="City">Miestas:<mark class="red">*</mark></label><br>
+                    <input type="text" id="City" name="City">
+                </div>
+                <div id="streetName">
+                    <label id ="labelForStreet" for="Street">Gatvė:<mark class="red">*</mark></label><br>
+                    <input type="text" id="Street" name="Street">
+                </div>
+                <div id="houseNumber">
+                    <label id ="labelForHouse" for="House">Namo nr.:<mark class="red">*</mark></label><br>
+                    <input type="text" id="House" name="House">
+                </div>
+                <div id="flatNumber">
+                    <label id ="labelForFlat" for="Flat">Buto nr.:</label><br>
+                    <input type="text" id="Flat" name="Flat">
+                </div>
+            </div>
+            <div id="otherContacts">
+                    <label id ="labelContacts" for="Contacts">Kita kontaktai(pvz.: svetainės nuoroda, darbinio tel.nr.)</label><br>
+                    <input type="text" id="Contacts" name="Contacts">
+            </div>
+
+        </div>
+
+        <div id="family">
+            <h3>3. Šeimyninė padėtis</h2>
+            <div id="maritalStatus">
+                <p>Vedybinė padėtis:<mark class="red">*</mark></p>
+                <p class="redInfo" id="vedybosIvestas" hidden="true">Vedybinė padėtis turi būti nurodyta</p>
+                <form action="">
+                    <input type="radio" onclick="handleClick(this)" id="married" name="padetis" value="Vedęs/ištekėjusi">
+                    <label for="married">Vedęs/ištekėjusi</label><br>
+                    <input type="radio" onclick="handleClick(this)" id="divorced" name="padetis" value="Išsiskyręs/išsiskyrus">
+                    <label for="divorced">Išsiskyręs/išsiskyrus</label><br> 
+                    <input type="radio" onclick="handleClick(this)" id="lonely" name="padetis" value="Vienišas/vieniša">
+                    <label for="lonely">Vienišas/vieniša</label><br> 
+                    <input type="radio" onclick="handleClick(this)" id="widowhood" name="padetis" value="Našlys/našlė">
+                    <label for="widowhood">Našlys/našlė</label><br> 
+                </form> 
+            </div>
+            <div id="partner" hidden="true">
+                <div id="YourpartnerName">
+                    <label id ="labelForpartnerName" for="partnerName">Sutuoktinio vardas:<mark class="red">*</mark></label><br>
+                    <p class="redInfo" id="partneriovardasIvestas" hidden="true">Sutuoktinio vardas turi būti nurodytas</p>
+                    <input type="text" id="partnerName" name="partnerName">
+                </div>
+                <div id="YourPartnerSurname">
+                    <label id ="labelForPartnerSurname" for="PartnerSurname">Sutuoktinio pavardė:<mark class="red">*</mark></label><br>
+                    <p class="redInfo" id="partnerioPavardeIvestas" hidden="true">Sutuoktinio pavardė turi būti nurodyta</p>
+                    <input type="text" id="PartnerSurname" name="PartnerSurname">
+                </div>
+                <div id="PartnerCode">
+                    <label id ="labelForYourPartnerCode" for="YourPartnerCode">Sutuoktinio asmens kodas:<mark class="red">*</mark></label><br>
+                    <p class="redInfo" id="partnerioKodasIvestas" hidden="true">Sutuoktinio asmens kodas turi būti nurodytas</p>
+                    <input type="text" id="YourPartnerCode" name="YourPartnerCode">
+                </div>
+            </div>
+
+             <div id="numOfKids">
+                 <label id ="labelForkids" for="numberOFkids">Vaikų skaičius:<mark class="red">*</mark></label><br>
+                 <p class="redInfo" id="vaikaiIvestas" hidden="true">Vaikų skaičius turi būti nurodytas</p>
+                 <input type="number" min="0" max="100" id="numberOFkids" onchange="handleClick2()" name="numOFkids">
+             </div>
+
+            <div id="kids" hidden="true">
+                 <div id="kidName">
+                    <label id ="labelForkidName" for="childName">Vaiko vardas:<mark class="red">*</mark></label><br>
+                    <p class="redInfo" id="vaikoVardasIvestas" hidden="true">Vaiko vardas turi būti nurodytas</p>
+                    <input type="text" id="childName" name="childName">
+                </div>
+                <div id="kidSurname">
+                    <label id ="labelForkidSurname" for="childSurname">Vaiko pavardė:<mark class="red">*</mark></label><br>
+                    <p class="redInfo" id="vaikoPavardeIvestas" hidden="true">Vaiko pavardė turi būti nurodyta</p>
+                    <input type="text" id="childSurname" name="childSurname">
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div id="education">
+            <h3>4. Išsilavinimas</h2>
+            <div id="educationlvl">
+                <p class="redInfo" id="issilavinimasIvestas" hidden="true">Išsilavinimas turi būti nurodytas</p>
+                <form action="">
+                    <label for="level">Išsilavinimas:<mark class="red">*</mark></label>
+                    <select name="level" id="level" onclick="myFunction2(this)">
+                      <option value="main" >pagrindinis</option>
+                      <option value="medium">vidurinis</option>
+                      <option value="prof">profesinis</option>
+                      <option value="hcollage">aukštasis-kolegijinis</option>
+                      <option value="huniversity">aukštasis-universitetinis</option>
+                    </select>
+                    <br><br>
+                  </form>
+            </div>
+            <div id="educationPlace">
+                <label id ="labelForeducationPlace" for="edPlace">Paskutinė baigta mokymo įstaiga:<mark class="red">*</mark></label><br>
+                <p class="redInfo" id="mokymoIstaigaIvestas" hidden="true">Mokymo įstaiga turi būti nurodyta</p>
+                <input type="text" id="edPlace" name="edPlace">
+             </div>
+            <div id="educationYear">
+                <label id ="labelForeducationYear" for="educationEndYear">Baigimo metai:<mark class="red">*</mark></label><br>
+                <p class="redInfo" id="baigimoMetaiIvestas" hidden="true">Baigimo metai turi būti nurodyti</p>
+                <input type="text" id="educationEndYear" name="educationEndYear">
+            </div>
+            <div id="qualification">
+                <label id ="labelForqualification" for="Personqualification">Kvalifikacija:</label><br>
+                <input type="text" id="Personqualification" name="Personqualification">
+            </div>
+            <div id="degree" hidden="true">
+                <p class="redInfo" id="moksloLaipsnisIvestas" hidden="true">Mokslo laipsnis turi būti nurodytas</p>
+                <form action="">
+                    <label for="degreeLvl">Mokslo laipsnis:<mark class="red">*</mark></label>
+                    <select name="degreeLvl" id="degreeLvl">
+                      <option value="bakalauras">Bakalauras</option>
+                      <option value="magistras">Magistras</option>
+                      <option value="daktaras">Daktaras</option>
+                      <option value="habilituotas daktaras">Habilituotas daktaras</option>
+                    </select>
+                    <br><br>
+                  </form>
+            </div>
+
+        </div>
+
+        <div id="profession">
+            <h3>5. Profesinė informacija</h2>
+                <p class="redInfo" id="profesinePadetisIvestas" hidden="true">Profesinė padėtis turi būti nurodyta</p>
+            <div id="professionStatus">
+                <p>Profesinė padėtis:<mark class="red">*</mark></p>
+                <form action="">
+                    <input type="radio" onclick="handleClick(this)" id="studying" name="Status" value="studijos">
+                    <label for="married">Studijuojantis</label><br>
+                    <input type="radio" onclick="handleClick(this)" id="working" name="Status" value="darbas">
+                    <label for="divorced">Dirbantis</label><br> 
+                    <input type="radio" onclick="handleClick(this)" id="notWorking" name="Status" value="bedarbyste">
+                    <label for="lonely">Bedarbis</label><br> 
+                    <input type="radio" onclick="handleClick(this)" id="maternity" name="Status" value="atostogos">
+                    <label for="widowhood">Motinystės/tėvystės atostogos</label><br> 
+                </form> 
+            </div>
+            <div id="studies" hidden="true">
+                <p class="redInfo" id="studijuPakopaIvestas" hidden="true">Studijų pakopa turi būti nurodyta</p>
+                <form action="">
+                    <label for="studiesLvl">Studijų pakopa:<mark class="red">*</mark></label>
+                    <select name="studiesLvl" id="studiesLvl">
+                        <option value="first">I-pakopa Bakalauras</option>
+                        <option value="second">II-pakopa Magistrantūra</option>
+                        <option value="third">III-pakopa Doktorantūra</option>
+                    </select>
+                    <br><br>
+                    </form>
+                    <p class="redInfo" id="kursasIvestas" hidden="true">Kursas turi būti nurodytas</p>
+                <form action="">
+                    <label for="course">Kursas:<mark class="red">*</mark></label>
+                    <select name="course" id="course">
+                        <option value="1 kursas">1 kursas</option>
+                        <option value="2 kursas">2 kursas</option>
+                        <option value="3 kursas">3 kursas</option>
+                        <option value="4 kursas">4 kursas</option>
+                    </select>
+                    <br><br>
+                    </form>
+                <div id="moksloIstaiga">
+                    <label id ="labelForIstaiga" for="Istaiga">Mokymosi įstaiga:<mark class="red">*</mark></label><br>
+                    <p class="redInfo" id="dabartineMokymoIstaigaIvestas" hidden="true">Mokymosi įstaiga turi būti nurodyta</p>
+                    <input type="text" id="Istaiga" name="Istaiga">
+                </div>
+            </div>
+
+            <div id="work" hidden="true">
+                <div id="darboVieta">
+                    <label id ="labelForVieta" for="Vieta">Darbo įstaiga:<mark class="red">*</mark></label><br>
+                    <p class="redInfo" id="darboIstaigaIvestas" hidden="true">Darbo įstaiga turi būti nurodyta</p>
+                    <input type="text" id="Vieta" name="Vieta">
+                </div>
+                <div id="darbopareigos">
+                    <label id ="labelForIstaiga" for="pareigos">Pareigos:<mark class="red">*</mark></label><br>
+                    <p class="redInfo" id="pareigosIvestas" hidden="true">Pareigos turi būti nurodytos</p>
+                    <input type="text" id="pareigos" name="pareigos">
+                </div>
+            </div>
+            <div id="notWorker" hidden="true">
+                <label id ="labelForNotWorker" for="bedarbioPriezastis">Bedarbystės priežatis:<mark class="red">*</mark></label><br>
+                <p class="redInfo" id="bedarbisIvestas" hidden="true">Bedarbystės priežastis turi būti nurodyta</p>
+                <input type="text" id="bedarbioPriezastis" name="bedarbioPriezastis">
+            </div>
+            <div id="stazas" >
+                <label id ="labelFordarboStazas" for="darboStazas">Darbo patirtis(metais):<mark class="red">*</mark></label><br>
+                <p class="redInfo" id="patirtisIvestas" hidden="true">Darbo patirtis turi būti nurodyta</p>
+                <input type="number" min="0" max="100" id="darboStazas" onchange="myFunction()" name="darboStazas">
+            </div>
+            <div id="darboPobudis" hidden="true">
+                <label id ="labelForpobudis" for="pobudis">Darbo pobūdis(pvz.: individuali veikla,vadovas,specialistas):<mark class="red">*</mark></label><br>
+                <p class="redInfo" id="pobudisIvestas" hidden="true">Darbo pobūdis turi būti nurodytas</p>
+                <input type="text" id="pobudis" name="pobudis">
+            </div>
+            <div id="darbineSritis" hidden="true">
+                <p class="redInfo" id="darboSritisIvestas" hidden="true">Darbo sritis turi būti nurodyta</p>
+            <form action="">
+                <label for="darboSritis">Darbo sritis:<mark class="red">*</mark></label>
+                <select name="darboSritis" id="darboSritis">
+                    <option value="teise">teisė</option>
+                    <option value="viešasis sektorius">viešasis sektorius</option>
+                    <option value="sveikatos apsauga">sveikatos apsauga</option>
+                    <option value="farmacija">farmacija</option>
+                    <option value="pramonė / gamyba">pramonė / gamyba</option>
+                    <option value="IT">IT</option>
+                    <option value="prekyba">prekyba</option>
+                    <option value="krašto apsauga">krašto apsauga</option>
+                    <option value="vidaus reikalų sistema">vidaus reikalų sistema</option>
+                    <option value="klientų aptarnavimas ir paslaugos">klientų aptarnavimas ir paslaugos</option>
+                    <option value="transportas">transportas</option>
+                    <option value="kultūra ir pramogos">kultūra ir pramogos</option>
+                    <option value="švietimas / studijos">švietimas / studijos</option>
+                </select>
+                <br><br>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="end">
+            <button id="BaigtiAnketa">Pateikti</button>
+            <p class="redInfo" id="klaida" hidden="true">Užpildykite visus laukus!</p>
+          </div>
+        <div id="ispejimas"> 
+            <p>"<mark class="red">*</mark>" žymi privalomus laukus</p>
+        </div>
+    </div>
+    
+</div>
+
+</body>
+<script src="app.js" charset="utf-8"></script>
+</html>

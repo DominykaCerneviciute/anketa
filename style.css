@@ -1,0 +1,187 @@
+#all{
+    display: flex;
+    justify-content: center;
+    background-color:#e6eeff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+
+#anketa{
+    width: 53%;
+    background-color: white;
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+}
+
+.redInfo{
+    color: red;
+    font-style: italic;
+    font-size: 14px;
+    margin: 0;
+}
+
+#gimimodata{
+    margin-top: 3vh;
+}
+
+#anketa h1{
+    margin-top: 20vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-align: center;
+}
+
+#BaigtiAnketa{
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    margin-left: 50%;
+}
+
+#profession, #education, #family, #contacts{
+    margin-left: 5vw;
+    margin-top: 8vh;
+    margin-right: 3vw;
+}
+
+#profession h3, #education h3, #family h3, #contacts h3, #personalInfo h3{
+    margin-bottom: 7vh;
+}
+
+#personalInfo{
+    margin-left: 5vw;
+    margin-top: 15vh;
+}
+
+#birthdate, #adress{
+    display: flex;
+    justify-content: start;
+}
+
+#birthdate p{
+    margin-right: 2vw;
+}
+
+#year, #month, #day, #educationEndYear{
+    width: 60px;
+    margin-right: 5px;
+}
+
+#Flat, #House, #City, #Street{
+    width: 100px;
+}
+
+
+#flatNumber, #houseNumber, #streetName, #CountryCity{
+    margin-left: 7px;
+}
+
+#email, #edPlace, #bedarbioPriezastis{
+    width: 200px;
+}
+
+#Contacts{
+    width: 40vw;
+}
+
+#personalCode, #previousSurname, #surname, #secondName, #Name, #otherContacts, #email, #phoneNumber,
+#kidSurname, #kidName, #numOfKids, #YourPartnerSurname, #YourpartnerName, #PartnerCode, #maritalStatus,
+#qualification,#educationYear,#educationPlace,#educationlvl, #darboSritis, #darboPobudis, #stazas, #notWorker, #darbopareigos, #darboVieta,
+#moksloIstaiga, #course, #studiesLvl, #professionStatus{
+    margin-top: 2vh;
+}
+
+#previousSurname, #professionStatus{
+    margin-bottom: 3vh;
+}
+
+#degree, #darbineSritis{
+    margin-top: 4vh;
+}
+
+#birthdate, #adress, #maritalStatus {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+#educationlvl label, #degree label, #studies label, #course label, #darbineSritis label{
+    margin-right: 6px;
+}
+
+.red{
+    color: red;
+    background-color: white;
+}
+#klaida{
+    text-align: center;
+}
+#ispejimas{
+    margin-top: 1vh;
+    margin-left: 5vw;
+    margin-bottom: 7vh;
+    font-style: italic;
+    color: gray;
+}
+
+@media only screen and (max-width: 1450px){
+    #adress{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    #anketa{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #anketa{
+        width: 68%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #anketa{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 670px){
+    #anketa h1{
+        margin-top: 15vh;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #birthdate{
+        display: block;
+    }
+    #anketa{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #anketa{
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    #anketa{
+        width: 90%;
+    }
+    #darbineSritis{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    #anketa{
+        width: 98%;
+    }
+}
