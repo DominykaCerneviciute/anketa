@@ -45,19 +45,20 @@
                 </form> 
             </div> 
             <p class="redInfo"  id="gimimoDataIvestas" hidden="true">Gimimo data turi būti įvesta</p>
+            <p class="redInfo" id="BlogaiIvestasGimtadienis" hidden="true">Nurodykite teisingus duomenis</p>
             <div id="birthdate">
                 <p>Gimimo data:<mark class="red">*</mark></p>
                 <div class="yearOfBirth">
                     <label id ="labelForYear" for="year">Metai: </label><br>
-                    <input type="text" id="year" name="year" placeholder="1997">
+                    <input type="number" min="1900" max="2021" id="year" name="year" placeholder="1997">
                 </div>
                 <div class="monthOfBirth">
                     <label id ="labelForMonth" for="month">Mėnuo: </label><br>
-                    <input type="text" id="month" name="month" placeholder="05">
+                    <input type="number" min="1" max="12" id="month" name="month" placeholder="5">
                 </div>
                 <div class="dayOfBirth">
                     <label id ="labelForday" for="day">diena: </label><br>
-                    <input type="text" id="day" name="day" placeholder="27">
+                    <input type="number" min="1" max="31" id="day" name="day" placeholder="27">
                 </div>
             </div>
 
@@ -81,10 +82,11 @@
                 <p class="redInfo" id="elPastasIvestas" hidden="true">El. pašto adresas turi būti įvestas</p>
                 <input type="text" id="Youremail" name="Youremail">
             </div>
-            <p class="redInfo" id="gyvVietaIvestas" hidden="true">Gyvenamosios vietos turi būti įvestas</p>
+            <p class="redInfo" id="gyvVietaIvestas" hidden="true">Gyvenamosios vietos adresas turi būti įvestas</p>
             <p class="redInfo" id="miestasIvestas" hidden="true">Miestas turi būti įvestas</p>
-            <p class="redInfo" id="gatveIvestas" hidden="true">Gatvė turi būti įvestas</p>
+            <p class="redInfo" id="gatveIvestas" hidden="true">Gatvė turi būti įvesta</p>
             <p class="redInfo" id="namoNrIvestas" hidden="true">Namo numeris turi būti įvestas</p>
+            <p class="redInfo" id="BlogaiIvestasAdresas" hidden="true">Nurodykite teisingus duomenis</p>
             <div id="adress">
                 <p>Gyvenamosios vietos adresas:<mark class="red">*</mark></p>
                 <div id="CountryCity">
@@ -97,11 +99,11 @@
                 </div>
                 <div id="houseNumber">
                     <label id ="labelForHouse" for="House">Namo nr.:<mark class="red">*</mark></label><br>
-                    <input type="text" id="House" name="House">
+                    <input type="number" min="1" id="House" name="House">
                 </div>
                 <div id="flatNumber">
                     <label id ="labelForFlat" for="Flat">Buto nr.:</label><br>
-                    <input type="text" id="Flat" name="Flat">
+                    <input type="number" min="1" id="Flat" name="Flat">
                 </div>
             </div>
             <div id="otherContacts">
@@ -148,6 +150,7 @@
              <div id="numOfKids">
                  <label id ="labelForkids" for="numberOFkids">Vaikų skaičius:<mark class="red">*</mark></label><br>
                  <p class="redInfo" id="vaikaiIvestas" hidden="true">Vaikų skaičius turi būti nurodytas</p>
+                 <p class="redInfo" id="BlogaiIvestasVaikuSk" hidden="true">Nurodykite teisingus duomenis</p>
                  <input type="number" min="0" max="100" id="numberOFkids" onchange="handleClick2()" name="numOFkids">
              </div>
 
@@ -191,7 +194,8 @@
             <div id="educationYear">
                 <label id ="labelForeducationYear" for="educationEndYear">Baigimo metai:<mark class="red">*</mark></label><br>
                 <p class="redInfo" id="baigimoMetaiIvestas" hidden="true">Baigimo metai turi būti nurodyti</p>
-                <input type="text" id="educationEndYear" name="educationEndYear">
+                <p class="redInfo" id="BlogaiBaigimoMetai" hidden="true">Nurodykite teisingus duomenis</p>
+                <input type="number" min="1900" max="2021" id="educationEndYear" name="educationEndYear">
             </div>
             <div id="qualification">
                 <label id ="labelForqualification" for="Personqualification">Kvalifikacija:</label><br>
@@ -278,6 +282,7 @@
             <div id="stazas" >
                 <label id ="labelFordarboStazas" for="darboStazas">Darbo patirtis(metais):<mark class="red">*</mark></label><br>
                 <p class="redInfo" id="patirtisIvestas" hidden="true">Darbo patirtis turi būti nurodyta</p>
+                <p class="redInfo" id="BlogaiIvestasDarboPatirtis" hidden="true">Nurodykite teisingus duomenis</p>
                 <input type="number" min="0" max="100" id="darboStazas" onchange="myFunction()" name="darboStazas">
             </div>
             <div id="darboPobudis" hidden="true">
@@ -311,8 +316,9 @@
 
 
         <div class="end">
-            <button id="BaigtiAnketa">Pateikti</button>
+            <button id="BaigtiAnketa" onclick="check()">Pateikti</button>
             <p class="redInfo" id="klaida" hidden="true">Užpildykite visus laukus!</p>
+            <p class="greenInfo" id="patvirtinimas" hidden="true">Sėkmingai pateikta</p>
           </div>
         <div id="ispejimas"> 
             <p>"<mark class="red">*</mark>" žymi privalomus laukus</p>

@@ -23,6 +23,13 @@ body{
     font-size: 14px;
     margin: 0;
 }
+.greenInfo{
+    text-align: center;
+    color: green;
+    font-style: italic;
+    font-size: 14px;
+    margin: 0;
+}
 
 #gimimodata{
     margin-top: 3vh;
